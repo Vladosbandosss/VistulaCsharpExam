@@ -12,18 +12,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-           //Problem1();
+          //SolveProblem1();
            
-           //Problem2();
+          //SolveProblem2();
            
-           //Problem3();
+          //SolveProblem3();
            
-           //Problem4();
+          //SolveProblem4();
            
-           //Problem5();
-           
+          //SolveProblem5();
+          
         }
-        public static void Problem1()
+        public static void SolveProblem1()
         {
             Console.WriteLine(-1+4*6);
             Console.WriteLine((35+5)%7);
@@ -31,7 +31,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine(2+15/6*1-7%2);
         }
 
-        public static void Problem2()
+        public static void SolveProblem2()
         {
             for (int i = 0; i < 100; i++)
             {
@@ -42,25 +42,23 @@ namespace MyApp // Note: actual namespace depends on the project name.
             }
         }
 
-        public static void Problem3()
+        public static void SolveProblem3()
         {
-            double volume,area,p=3.1415;
-
-            double four = 4;
-            double three = 3;
-            double fourDevidedByThree = four / three;
+            double volume,area;
+            
+            float fourDevidedByThree = 4f / 3f;
 
             Console.WriteLine("Please enter radius");
             double radius = Convert.ToDouble(Console.ReadLine());
 
-            volume = fourDevidedByThree * p * Math.Pow(radius, 3);
-            area = 4 * p * Math.Pow(radius, 2);
+            volume = fourDevidedByThree * Math.PI * Math.Pow(radius, 3);
+            area = 4 * Math.PI * Math.Pow(radius, 2);
             
             Console.WriteLine(Math.Round(volume,5));
             Console.WriteLine(Math.Round(area,5));
         }
 
-        public static void Problem4()
+        public static void SolveProblem4()
         {
             Console.WriteLine("Please enter mark");
             double mark = Convert.ToDouble(Console.ReadLine());
@@ -92,7 +90,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine($"Your grade is {resultMark}");
         }
 
-        public static void Problem5()
+        public static void SolveProblem5()
         {
             Console.WriteLine("Enter numbers of rows");
 
